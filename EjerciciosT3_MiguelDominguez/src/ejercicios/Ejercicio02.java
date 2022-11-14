@@ -8,7 +8,7 @@ public class Ejercicio02 {
 		// bloque de variables
 				int numero;				// se guarda el numero que introduzca el usuario
 				int contador=0;
-				//int contador=0;
+				boolean primo = true;
 				
 				// creamos el scanner
 				Scanner sc=new Scanner(System.in);
@@ -16,20 +16,30 @@ public class Ejercicio02 {
 				System.out.println("Introduzca un numero: ");
 				numero=sc.nextInt();
 				
+				if (numero>0) {
 				//creamos el bucle 
+				for (int i=2 ; i<=numero ; i++) {
+				 primo= true;
+					for(int j = 2 ; j<i ; j++) {
+						if (i%j==0) {
+							primo=false;
+							break;
+							}
 				
-				for(int i=2; i<=numero;i++) {		//Empezamos el bucle en 2, mientras i sean menor o igual que el numero, cada vuelta suma1
-					if (numero%i==0) {				// si el numero dividido por la i es = 0 el contador aumentara en 1 
-					contador++;
-					
+						}
+					if (primo) {
+						contador++;
 					}
 				}
-				System.out.println("Hay "+contador+" numeros primos");		// muestras el resultado
-				//cerramos scanner
+				
+				}else {
+					System.out.println("Introduce un entero.");
+				}
+				System.out.println("Hay "+contador+" numeros primos.");
+
+				// scanner close
 				sc.close();
-
-			}
-
+	}
 	
 }
 
