@@ -41,7 +41,7 @@ public class Ejercicio01 {
 					}
 				}
 
-				System.out.println(horas + ":" + minutos + ":" + segundos);
+				System.out.println(horas + ":" + minutos + ":" + segundos);		//mostramos el resultado 
 				
 				//cerramos el scanner
 				sc.close();

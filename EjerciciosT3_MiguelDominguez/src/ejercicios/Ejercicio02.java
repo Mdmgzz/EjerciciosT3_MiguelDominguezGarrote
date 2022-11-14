@@ -18,13 +18,13 @@ public class Ejercicio02 {
 				
 				//creamos el bucle 
 				
-				for(int i=2; i<=numero;i++) {
-					if (numero%i==0) {
+				for(int i=2; i<=numero;i++) {		//Empezamos el bucle en 2, mientras i sean menor o igual que el numero, cada vuelta suma1
+					if (numero%i==0) {				// si el numero dividido por la i es = 0 el contador aumentara en 1 
 					contador++;
 					
 					}
 				}
-				System.out.println(contador);
+				System.out.println("Hay "+contador+" numeros primos");		// muestras el resultado
 				//cerramos scanner
 				sc.close();
 
