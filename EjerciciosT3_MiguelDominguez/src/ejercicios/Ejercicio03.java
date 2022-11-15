@@ -19,7 +19,8 @@ public class Ejercicio03 {
 		for ( int i=1;i<=estrellas;i++) {
 			System.out.println("* ");
 		}
-
+		// cerramos scanner
+		sc.close();
 	}
 
 }
