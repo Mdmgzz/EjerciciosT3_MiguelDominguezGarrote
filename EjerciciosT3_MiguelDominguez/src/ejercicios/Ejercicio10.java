@@ -5,6 +5,16 @@ import java.util.Scanner;
 public class Ejercicio10 {
 
 	public static void main(String[] args) {
+		/*
+		 * Pruebas:
+		 * He probado con el 1,12,22,353,4554 y con el 0
+		 * 1= Debería salir Es capicua
+		 * 12=Debería salir No Es capicua
+		 * 22=Debería salir Es capicua
+		 * 353=Debería salir Es capicua
+		 * 4554=Debería salir Es capicua
+		 * 0=Debería salir Introduzca a partir de 0
+		 */
 		// bloque de variables
 		int numinicial;
 		int num;
@@ -19,7 +29,7 @@ public class Ejercicio10 {
 		// guardamos el valor de numinicial en otra variable para trabajar en ella
 		num = numinicial;
 		//ponemos limites
-		if (numinicial<0) {
+		if (numinicial<1) {
 			System.out.println("Introduzca a partir de 0");			// comprobamos que el numero introducido este dentro del rango
 		}else {
 			// creamos el bucle
