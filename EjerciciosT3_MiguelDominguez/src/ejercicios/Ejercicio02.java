@@ -5,6 +5,14 @@ import java.util.Scanner;
 public class Ejercicio02 {
 
 	public static void main(String[] args) {
+		/*
+		 * Pruebas:
+		 * he probado con el 12,1,25
+		 * 1= Hay 0 numeros primos.
+		 * 12= Hay 4 numeros primos.
+		 * 25= Hay 9 numeros primos.
+		 * -73=Introduce un entero.
+		 */
 		// bloque de variables
 				int numero;				// se guarda el número que introduzca el usuario
 				int contador=0;
@@ -31,11 +39,11 @@ public class Ejercicio02 {
 						contador++;						// contador suma 1 y vuelve a empezar el bucle
 					}
 				}
+				System.out.println("Hay "+contador+" numeros primos.");		// muestra el resultado
 				
 				}else {
 					System.out.println("Introduce un entero.");	// si se introduce un numero menor que 0 aparecerá esto 
 				}
-				System.out.println("Hay "+contador+" numeros primos.");		// muestra el resultado
 
 				// scanner close
 				sc.close();

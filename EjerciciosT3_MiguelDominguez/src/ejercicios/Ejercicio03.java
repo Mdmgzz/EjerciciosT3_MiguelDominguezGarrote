@@ -5,6 +5,13 @@ import java.util.Scanner;
 public class Ejercicio03 {
 
 	public static void main(String[] args) {
+		/*
+		 * pruebas:
+		 * He probado con el 4 ,el 12 y el 0:
+		 * 4= una piramide de 4x4
+		 * 12= una piramide de 12x12
+		 * 0= Introduce un valor positivo
+		 */
 		//bloque de variables
 		int estrellas;					// guarda el alto y la base del triangulo
 		// creamos scanner
@@ -14,7 +21,9 @@ public class Ejercicio03 {
 		System.out.println("Introduzca la base y altura del triangulo:");
 		estrellas= sc.nextInt();
 		// creamos el bucle 
-		
+		if (estrellas<=0) {
+			System.out.println("Introduce un valor positivo");
+		}else {
 		for ( int i=1; i<=estrellas;i++) {			// se inicia en 1 funciona mientras i es menor o igual que estrellas y va de 1 en 1
 			for (int j=1;j<=estrellas-i;j++) {
 				/*
@@ -33,6 +42,7 @@ public class Ejercicio03 {
 				System.out.print("* ");
 		}
 			System.out.println();			// esto escribe el salto de linea
+		}
 		}
 		//cerramos el scanner
 		sc.close();

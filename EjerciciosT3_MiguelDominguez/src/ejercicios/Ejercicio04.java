@@ -5,6 +5,13 @@ import java.util.Scanner;
 public class Ejercicio04 {
 
 	public static void main(String[] args) {
+		/*
+		 * Pruebas: 
+		 * he hecho pruebas con: 2y4 23 y 11 y -1 y 3
+		 * 2y4= El maximo comun divisor es: 2
+		 * 23 y11=  El maximo comun divisor es: 1
+		 * -1 y 30Introduzca unos numeros enteros positivos
+		 */
 		// bloque de variables
 		int i;
 		int num1;
@@ -23,7 +30,9 @@ public class Ejercicio04 {
 }else {
 			menor=num1;			// su num 2 es mayor que num 2, num 1 será el menor
 }
-				
+				if (num1<=0 || num2<=0) {
+					System.out.println("Introduzca unos numeros enteros positivos.");
+				}else {
 			// creamos bucle 
 			for (i=menor; i>0;i--) {		// funciona mientras i sea mayor que 0
 				if (num1%i==0 && num2%i==0) {		// si al dividir num1 entre i da 0 y lo mismo con num2, ese numero será el maximo divisor
@@ -31,6 +40,7 @@ public class Ejercicio04 {
 					break;
 				}
 			}
+				}
 			// cerramos scanner
 			sc.close();
 		}
